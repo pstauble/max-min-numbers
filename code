@@ -1,0 +1,21 @@
+numbers=raw_input("Please Insert Numbers")
+numbers=numbers.split()
+number_list=[]
+for i in numbers:
+	number_list.append(int(i))
+
+length=len(number_list)
+max=0
+for i in range(0,length):
+	if number_list[i] > max:
+		max = number_list[i]
+	else:
+		pass
+min=0		
+for i in range(0,length):
+	if number_list[i] < min:
+		min = number_list[i]
+	else:
+		pass
+	
+print max, min
